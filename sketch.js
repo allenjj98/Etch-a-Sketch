@@ -9,18 +9,12 @@ const grid = document.querySelector('#grid');
 let div; 
 
 
-
 // Add a new div and adjust style. Do this until the number of divs surpasses the number stored in the horizontal and vertical variables.
 for (let i = 0; i < vertical; i++) {
-    div = document.createElement("div");
-    div.classList.add("box");
-    grid.appendChild(div);
+    for (let j = 0; j < horizontal; j++) {
+        div = document.createElement("div");
+        div.classList.add("box");
+        grid.appendChild(div);
+    }
 }
 
-
-
-
-
-
-
-// adjust the allignment of the divs that they are spread across the screen. 
