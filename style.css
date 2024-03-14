@@ -12,7 +12,18 @@
     justify-content: center;
 }
 
-
 .new {
     background-color: red;
+}
+
+
+#btn-container {
+    display: flex;
+    justify-content: center;
+}
+
+#btn {
+    padding: 5px;
+    margin: 20px;
+    width: 100px;
 }

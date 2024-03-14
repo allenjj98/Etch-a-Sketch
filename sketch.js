@@ -1,9 +1,19 @@
+// select #grid div and store in a variable called grid
+const grid = document.querySelector('#grid');
+
+
 // create variables called vertical and horizonal to store figures for both of these orientations. 
 const vertical = 16;
 const horizontal = 16;
 
-// select #grid div and store in a variable called grid
-const grid = document.querySelector('#grid');
+
+// create a button variable that will represent the button in the dom. Attach an eventlistener to the button that will use prompt to display a pop-up to the user. 
+const button = document.querySelector('#btn');
+button.addEventListener('click', () => {
+    let gridWidth = prompt("Width of new box: ");
+    let gridHeight = prompt("Height of new box: ");
+})
+
 
 // create a box that later make up part of the grid
 let div; 
@@ -17,7 +27,6 @@ for (let i = 0; i < vertical; i++) {
         grid.appendChild(div);
     }
 }
-
 
 const boxes = document.querySelectorAll(".box");
 
