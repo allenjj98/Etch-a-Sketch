@@ -18,3 +18,13 @@ for (let i = 0; i < vertical; i++) {
     }
 }
 
+
+const boxes = document.querySelectorAll(".box");
+
+boxes.forEach((box) => {
+    box.addEventListener("mouseenter", () => {
+        box.classList.add("new");
+    });
+});
+
+

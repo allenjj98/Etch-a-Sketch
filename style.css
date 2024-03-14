@@ -11,3 +11,8 @@
     flex-wrap: wrap;
     justify-content: center;
 }
+
+
+.new {
+    background-color: red;
+}
