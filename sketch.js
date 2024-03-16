@@ -10,9 +10,19 @@ const horizontal = 16;
 // create a button variable that will represent the button in the dom. Attach an eventlistener to the button that will use prompt to display a pop-up to the user. 
 const button = document.querySelector('#btn');
 button.addEventListener('click', () => {
-    let gridWidth = prompt("Width of new box: ");
-    let gridHeight = prompt("Height of new box: ");
+    let gridWidth = parseInt(prompt("Width of new box: "));
+    let gridHeight = parseInt(prompt("Height of new box: "));
+    while (grid.hasChildNodes()) {
+        grid.removeChild(grid.firstChild)
+    }
 })
+
+
+
+
+
+
+
 
 
 // create a box that later make up part of the grid
